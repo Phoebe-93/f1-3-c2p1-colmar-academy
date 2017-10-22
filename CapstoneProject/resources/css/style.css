@@ -1,0 +1,595 @@
+html {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(95,100,120);
+}
+
+/* NAV BAR */
+
+.top-nav {
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.menu480 {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 24px;
+    font-size: 1.2rem;
+}
+
+.colmar {
+    color:black;
+    font-weight: 700;
+}
+
+.academy {
+    color: darkgray;
+    font-weight: 400;
+}
+
+.menu {
+    padding-right: 24px;
+}
+
+.menu span {
+    padding-left: 16px;
+}
+
+.menu span:hover {
+    color: rgb(25, 35, 60);
+}
+
+/* NAV BAR - MEDIA QUERY*/
+
+@media only screen and (max-width: 480px) {
+    
+    .menu480 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .logo, .menu {
+        display: none;
+    }
+    
+    .menu480 img:hover {
+        opacity: 0.5;
+        transition: opacity 300ms ease-out 100ms;
+    }
+    
+}
+
+/* Section 1 - Start here */
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: gainsboro;
+    margin-top: 64px;
+    padding: 32px 24px;
+}
+
+.img1 {
+    max-width: 60%;
+    height:auto;
+    padding-right: 12px;
+}
+
+.img1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.start {
+    display: flex; 
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 12px;
+}
+
+.start h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Eczar', serif;
+    color: rgb(25, 35, 60);
+}
+
+.start p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    line-height: 1.8rem;
+}
+
+.start .button {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 300px;
+    background-color: rgb(25, 35, 60);
+    padding: 8px;
+}
+
+.start .button:hover {
+    background-color: blue;
+    transition: background-color 300ms ease-out 100ms;
+}
+
+/* Section 1 - MEDIA QUERY */
+
+@media only screen and (max-width: 480px) {
+    
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 64px;
+        padding: 0px;
+        
+    }
+    
+    .img1 {
+        max-width: 100%;
+        padding: 0px;
+    }
+    
+    .start {
+        display: flex; 
+        align-items: center;
+        flex-direction: column;
+        padding: 32px 16px;
+    }
+    
+    .start p {
+        margin-top: 32px;
+}
+    
+}
+
+/* Section 2 - About */
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    padding: 32px 24px;
+    max-width: 100%;
+    background-color: whitesmoke;
+}
+
+.section2 .main {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    padding-right: 12px;
+}
+
+.section2 .secondary {
+    max-width: 40%;
+    padding-left: 12px;
+}
+
+.main img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 32px;
+}
+
+.note {
+    display: flex;
+    flex-direction: row;
+}
+
+.note:hover {
+    background-color: gainsboro;
+    transition: background-color 300ms ease-out 100ms;
+}
+
+.noteimg {
+    max-width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+.noteimg.notoppad {
+    margin-top: 0px;
+}
+
+.noteimg img {
+    width: 100%;
+    height: 193px;
+    object-fit: cover;
+}
+
+.note.orientation {
+    margin-top: -16px;
+}
+
+.note.orientation img {
+    margin-top: 16px;
+}
+
+.article1 h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-bottom: 24px;
+    font-family: 'Eczar', serif;
+    color: rgb(25, 35, 60);
+}
+
+.article1 p {
+    padding-bottom: 32px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.cit {
+    font-size: 0.7rem !important;
+    padding-bottom: 0px !important;
+    font-style: italic;
+}
+
+.article2 {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article2 h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 8px;
+    color: rgb(25, 35, 60);
+}
+
+.part {
+    font-size: 1rem;
+}
+
+.article2 p {
+    padding-bottom: 8px;
+    line-height: 1.5rem;
+}
+
+.read-more {
+    font-style: italic;
+    color: rgb(25, 35, 60);
+}
+
+.read-more:hover {
+    color: rgb(0, 0, 255);
+    transition: color 300ms ease-out 100ms;
+}
+
+.campus {
+    border-top: 1px solid rgb(175,175,180);
+    border-bottom: 1px solid rgb(175,175,180);
+}
+
+/* Section 2 - MEDIA QUERY */
+
+@media only screen and (max-width: 480px) {
+   
+    .section2 {
+        display: inline-block;
+        padding: 16px 16px;
+    }
+    
+    .section2 .main {
+        display: none;
+    }
+    
+    .section2 .secondary {
+        max-width: 100%;
+        padding-left: 0px;
+    }
+    
+    .note {
+        flex-direction: column;
+    }
+    
+    .noteimg {
+        max-width: 100%;
+        margin: 0px;
+    }
+    
+    .note.orientation {
+        margin-top: 0px;
+    }
+    
+    .note.orientation img {
+        margin-top: 0px;
+    }
+    
+    .article2 {
+        max-width: 100%;
+        padding: 16px;
+    }
+    
+    .margbot48 {
+        margin-bottom: 48px;
+    }
+    
+    .campus {
+        border-top: 0px;
+        border-bottom: 0px;
+    }
+    
+    .note:hover {
+        background-color: gainsboro;
+        box-shadow: 2px 2px 10px rgb(175,175,180);
+        transition: all 300ms ease-out 100ms;
+    }
+    
+}
+
+/* Section 3 - Start learning */
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: gainsboro;
+}
+
+.startlear {
+    text-align: center; 
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-top: 32px;
+    font-family: 'Eczar', serif;
+    color: rgb(25, 35, 60);
+}
+
+.classes {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 32px 72px;
+}
+
+.threeclass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.class {
+    background-color: whitesmoke;
+}
+
+.class:hover {
+    background-color: white;
+    box-shadow: 2px 2px 10px rgb(175,175,180);
+    transition: all 300ms ease-out 100ms;
+}
+
+.class img {
+    width: 100%;
+    height: auto;
+}
+
+.classtxt {
+    min-width: 92%;
+    width: 0;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+}
+
+.classtxt h4 {
+    font-size: 1.2 rem;
+    font-weight: bold;
+    color: rgb(25, 35, 60);
+}
+
+.paddr {
+    margin-right: 32px;
+}
+
+.margbot {
+    margin-bottom: 32px;
+}
+
+.marg8 {
+    margin-bottom: 8px;
+}
+
+.pheight {
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+
+.crs {
+    font-weight: 300;
+    color: rgb(25, 35, 60);
+}
+
+/* Section 2 - MEDIA QUERY */
+
+@media only screen and (max-width: 480px) {
+    
+    .class img {
+        display: none;
+    }
+    
+    .classes {
+        padding: 12px 16px;
+        padding-bottom: 28px !important;
+    }
+    
+    .threeclass {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+    }
+    
+    .classtxt p {
+        display: none;
+    }
+    
+    .classtxt {
+        width: 100%;
+        max-width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .paddr {
+        margin-right: 0px;
+    }
+
+    .margbot {
+        margin-bottom: 0px;
+    }
+
+    .marg8 {
+        margin-bottom: 0px;
+        padding: 16px;
+        padding-bottom: 24px !important;
+        text-align: center;
+    }
+    
+    .class {
+        margin: 4px 0px;
+    }
+    
+}
+    
+/* Section 4 - Thesis */
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: whitesmoke;
+}
+
+.content4 {
+    display: flex; 
+    flex-direction: row;
+    margin: 32px 24px;
+}
+
+.content4 .main {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    padding-right: 12px;
+}
+
+.content4 .secondary {
+    margin-left: 12px;
+}
+
+.section4 .article {
+    margin-top: 24px;
+}
+
+.section4 .article h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: rgb(25, 35, 60);
+}
+
+.section4 .article p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.nowthen {
+    border-top: 1px solid rgb(175,175,180);
+}
+
+/* Section 4 - MEDIA QUERY */
+
+@media only screen and (max-width: 480px) {
+    
+    .main .article {
+        display: none;
+    }
+    
+    .content4 .secondary {
+        display: none;
+    }
+    
+    .content4 {
+        display: inline-block;
+        margin: 0px;
+    }
+    
+    .content4 .main {
+        display: inline-block;
+        max-width: 100%;
+        padding-right: 0px;
+        padding-top: 16px;
+        padding-bottom: 24px;
+    }
+
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(25, 35, 60);
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    color: whitesmoke;
+}
+
+footer span{
+    padding-left: 16px;
+}
+
+.terms span:hover {
+    color: gainsboro;
+}
+
+/* Footer - MEDIA QUERY */
+
+@media only screen and (max-width: 480px) {
+
+    footer {
+        width: 100%;
+        display: flex;
+        padding: 16px 0px;
+    }
+    
+    .terms {
+        display: none;
+    }
+    
+    footer span{
+        padding-left: 16px;
+    }
+    
+}
